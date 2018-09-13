@@ -28,22 +28,22 @@ function doStageThree(dieRollResult){
         
     }
     else if(dieRollResult===3){
-        let userInput = prompt("Blue or Baby Blue?");
+        userInput = prompt("Blue or Baby Blue?");
         
     }
     else if(dieRollResult===4){
-        let userInput = prompt("Green or Neon Green?");
+        userInput = prompt("Green or Neon Green?");
        
     }
     else if(dieRollResult===5){
-        let userInput = prompt("White or Gray?");
+        userInput = prompt("White or Gray?");
         
     }
     else if(dieRollResult===6){
-        let userInput = prompt("Rainbow or Black?");
+        userInput = prompt("Rainbow or Black?");
     }
     else if(dieRollResult===7){
-        let userInput = prompt("Peach or Orange?");
+        userInput = prompt("Peach or Orange?");
         
     }
     else if(dieRollResult===8){
@@ -108,7 +108,7 @@ function doStageFour(userInput){
     }
     else if(userInput === "rainbow"){
         let roll = rollDie(10);
-        alert("You rolled a" + (roll) + "ready for your fortune...!?");
+        alert("You rolled a " + (roll) + "ready for your fortune...!?");
         getFortune(roll);
     }
     if(userInput === "black"){
@@ -186,18 +186,18 @@ function doStageTwo(color) {
 
      if(color === "purple") {
         let choices = ["apples, oranges, black, white, sweet, savory"];
-        let rollResult = rollDie(8); 
+        let rollResult = rollDie(3); 
         
         
         if (rollResult===1){
-            let userInput = prompt("Please choose apples or oranges!");
+            let userInput = prompt("Please chose apples or oranges!");
             if (userInput==="apples"){
                 dieRollResult=rollDie(3); 
-                window.alert("You choose apples and rolled a " + dieRollResult + "!");
+                window.alert("You chose apples and rolled a " + dieRollResult + "!");
             }
             else if(userInput === "oranges"){
                 dieRollResult=rollDie(4);
-                window.alert("You choose oranges and rolled a " + dieRollResult + "!");
+                window.alert("You chose oranges and rolled a " + dieRollResult + "!");
             }
         }
         
@@ -206,23 +206,23 @@ function doStageTwo(color) {
             let userInput = prompt("Please choose black or white!");
             if (userInput==="black"){
                 dieRollResult=rollDie(8);
-                window.alert("You choose black and rolled a " + dieRollResult + "!");
+                window.alert("You chose black and rolled a " + dieRollResult + "!");
             }
             else if(userInput==="white"){
                 dieRollResult=rollDie(5);
-                window.alert("You choose white and rolled a " + dieRollResult + "!");
+                window.alert("You chose white and rolled a " + dieRollResult + "!");
             }
          }
         
          else if (rollResult === 3){
-            let userInput = prompt('Please choose sweet or savory!');
+            let userInput = prompt('Please chose sweet or savory!');
             if (userInput === "sweet"){
                 dieRollResult=rollDie(7);
-                window.alert("You choose sweet and rolled a " + dieRollResult + "!");
+                window.alert("You chose sweet and rolled a " + dieRollResult + "!");
             }
             else if (userInput === "savory") {
                 dieRollResult=rollDie(6);
-                window.alert("You choose savory and rolled a " + dieRollResult + "!");
+                window.alert("You chose savory and rolled a " + dieRollResult + "!");
             }
         }
     
@@ -232,29 +232,29 @@ function doStageTwo(color) {
      else if(color === "pink" ){
 
             let choices = ["apples, oranges, black, white, sweet, savory, morning, night"];
-            let rollResult = rollDie(3); 
+            let rollResult = rollDie(4); 
 
             if (rollResult===1){
                 let userInput = prompt("Please choose apples or oranges!");
                 if (userInput==="apples"){
                     dieRollResult=rollDie(3);
-                    window.alert("You choose apples and rolled a " + dieRollResult + "!");
+                    window.alert("You cose apples and rolled a " + dieRollResult + "!");
                 }
                 else if(userInput === "oranges"){
                     dieRollResult=rollDie(4);
-                    window.alert("You choose oranges and rolled a " + dieRollResult + "!");
+                    window.alert("You chose oranges and rolled a " + dieRollResult + "!");
                 }
             }
             
             else if (rollResult === 2){
-                let userInput = prompt("Please choose black or white!");
+                let userInput = prompt("Please chose black or white!");
                 if (userInput==="black"){
                     dieRollResult=rollDie(3);
-                    window.alert("You choose black and rolled a " + dieRollResult + "!");
+                    window.alert("You chose black and rolled a " + dieRollResult + "!");
                 }
                 else if(userInput==="white"){
                     dieRollResult=rollDie(5);
-                    window.alert("You choose white and rolled a " + dieRollResult + "!");
+                    window.alert("You chose white and rolled a " + dieRollResult + "!");
                 }
              }
             
@@ -262,87 +262,87 @@ function doStageTwo(color) {
                 let userInput = prompt('Please choose sweet or savory!');
                 if (userInput === "sweet"){
                     dieRollResult=rollDie(7);
-                    window.alert("You choose sweet and rolled a " + dieRollResult + "!");
+                    window.alert("You chose sweet and rolled a " + dieRollResult + "!");
                 }
                 else if (userInput === "savory") {
                     dieRollResult=rollDie(6);
-                    window.alert("You choose savory and rolled a " + dieRollResult + "!");
+                    window.alert("You chose savory and rolled a " + dieRollResult + "!");
                 }
             }
 
              else if (rollResult === 4){
-                let userInput = prompt('Please choose morning or night!');
+                let userInput = prompt('Please chose morning or night!');
                 if (userInput === "morning"){
                     dieRollResult=rollDie(4);
-                    window.alert("You choose morning and rolled a " + dieRollResult + "!");
+                    window.alert("You chose morning and rolled a " + dieRollResult + "!");
                 }
                 else if (userInput === "night") {
                     dieRollResult=rollDie(8);
-                    window.alert("You choose night and rolled a " + dieRollResult + "!");
+                    window.alert("You chose night and rolled a " + dieRollResult + "!");
                 }
              }
          }
 
      else {
         let choices = ["apples, oranges, black, white, sweet, savory, morning, night, cat, dog"];
-        let rollResult = rollDie(3); 
+        let rollResult = rollDie(5); 
 
         if (rollResult===1){
-            let userInput = prompt("Please choose apples or oranges!");
+            let userInput = prompt("Please chose apples or oranges!");
             if (userInput==="apples"){
                 dieRollResult=rollDie(3);
-                window.alert("You choose apples and rolled a " + dieRollResult + "!");
+                window.alert("You chose apples and rolled a " + dieRollResult + "!");
             }
             else if(userInput === "oranges"){
                 dieRollResult=rollDie(4);
-                window.alert("You choose oragnes and rolled a " + dieRollResult + "!");
+                window.alert("You chose oragnes and rolled a " + dieRollResult + "!");
             }
         }
         
          else if (rollResult === 2){
-            let userInput = prompt("Please choose black or white!");
+            let userInput = prompt("Please chose black or white!");
             if (userInput==="black"){
                 dieRollResult=rollDie(3);
-                window.alert("You choose black and rolled a " + dieRollResult + "!");
+                window.alert("You chose black and rolled a " + dieRollResult + "!");
             }
             else if(userInput==="white"){
                 dieRollResult=rollDie(5);
-                window.alert("You choose white and rolled a " + dieRollResult + "!");
+                window.alert("You chose white and rolled a " + dieRollResult + "!");
             }
          }
         
          else if (rollResult === 3){
-            let userInput = prompt('Please choose sweet or savory!');
+            let userInput = prompt('Please chose sweet or savory!');
             if (userInput === "sweet"){
                 dieRollResult=rollDie(7);
-                window.alert("You choose sweet and rolled a " + dieRollResult + "!");
+                window.alert("You chose sweet and rolled a " + dieRollResult + "!");
             }
             else if (userInput === "savory") {
                 dieRollResult=rollDie(6);
-                window.alert("You choose savory and rolled a " + dieRollResult + "!");
+                window.alert("You chose savory and rolled a " + dieRollResult + "!");
             }
          }
          else if (rollResult === 4){
-            let userInput = prompt('Please choose morning or night!');
+            let userInput = prompt('Please chose morning or night!');
             if (userInput === "morning"){
                 dieRollResult=rollDie(4);
-                window.alert("You choose morning and rolled a " + dieRollResult + "!");
+                window.alert("You chose morning and rolled a " + dieRollResult + "!");
             }
             else if (userInput === "night") {
                 dieRollResult=rollDie(8);
-                window.alert("You choose night and rolled a ", + dieRollResult + "!");
+                window.alert("You chose night and rolled a ", + dieRollResult + "!");
             }
         }
 
          else if (rollResult === 5){
-             let userInput = prompt('Please choose cat or dog!');
+             let userInput = prompt('Please chose cat or dog!');
              if (userInput === "cat") {
                  dieRollResult=rollDie(3);
-                 window.alert("You choose cat and rolled a ", + dieRollResult + "!");
+                 window.alert("You chose cat and rolled a ", + dieRollResult + "!");
              }
              else if (userInput === "dog"); {
                 dieRollResult=rollDie(5);
-                window.alert("You choose cant and rolled a ", + dieRollResult + "!");
+                window.alert("You chose cant and rolled a ", + dieRollResult + "!");
              }
   
          }
