@@ -5,7 +5,7 @@ function rollDie(numberOfSides) {
     return roll;
 }
 
-
+//*****STAGE 1*****//
 function doStageOne() {
     let color;
     let colors = ["purple", "pink", "blue"];
@@ -18,38 +18,41 @@ function doStageOne() {
 function doStageThree(dieRollResult){
     if(dieRollResult===1){
         let userInput = window.prompt("Pink or Hot Pink?");
-        doStageFour(userInput);
+        
     }
     else if(dieRollResult===2){
         let userInput = window.prompt("Lavender or Violet?");
-        doStageFour(userInput);
+        
     }
     else if(dieRollResult===3){
         let userInput = window.prompt("Blue or Baby Blue?");
-        doStageFour(userInput);
+        
     }
     else if(dieRollResult===2){
         let userInput = window.prompt("Green or Neon Green?");
-        doStageFour(userInput);
+       
     }
     else if(dieRollResult===2){
         let userInput = window.prompt("White or Gray?");
-        doStageFour(userInput);
+        
     }
     else if(dieRollResult===2){
         let userInput = window.prompt("Rainbow or Black?");
-        doStageFour(userInput);
     }
     else if(dieRollResult===2){
         let userInput = window.prompt("Peach or Orange?");
-        doStageFour(userInput);
+        
     }
     else if(dieRollResult===2){
         let userInput = window.prompt("Maroon or Red?");
-        doStageFour(userInput);
+        
     }
+    return userInput;
 }
 
+
+
+//*****STAGE 4*****//
 function doStageFour(userInput){
     if(userInput === "pink"){
         
@@ -110,12 +113,13 @@ function doStageFour(userInput){
         let roll = rollDie(10);
         getFortune(roll);
     }
+    return roll;
 }
 
 
 
 
-
+//*****GET FORTUNE*****//
 function getFortune(roll){
     if(roll === 1){
         window.alert("Anything is possible with a willing heart.");
@@ -165,7 +169,7 @@ function getFortune(roll){
 
 
 
-
+//*****STAGE 2*****//
 
 function doStageTwo(color) {
 
@@ -342,6 +346,8 @@ function playGame() { // master function
     let stageOneColorResult = doStageOne();
     let stageTwoRollResult = doStageTwo(colorResult);
     let stageThreeResult = doStageThree(stageTwoRollResult);
+    let stageFourResult = doStageFour(stageThreeResult);
+
 }
 
 playGame();
