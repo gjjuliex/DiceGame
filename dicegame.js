@@ -336,14 +336,14 @@ function doStageTwo(color) {
         }
 
          else if (rollResult === 5){
-             let userInput = prompt(' 🐱🐶 Please chose cat or dog! 🐶🐱 ');
+             let userInput = prompt(' 🐱🐶 Please choose cat or dog! 🐶🐱 ');
              if (userInput === "cat") {
                  dieRollResult=rollDie(3);
-                 window.alert("You chose cat and rolled a ", + dieRollResult + "! 🐱");
+                 window.alert("You chose cat and rolled a " + dieRollResult + "! 🐱");
              }
              else if (userInput === "dog"); {
                 dieRollResult=rollDie(5);
-                window.alert("You chose cant and rolled a ", + dieRollResult + "! 🐶");
+                window.alert("You chose cat and rolled a " + dieRollResult + "! 🐶");
              }
   
          }
@@ -358,6 +358,7 @@ function doStageTwo(color) {
     else {
         close_window();
     }
+   }
    
 
 
@@ -374,7 +375,7 @@ function close_window() {
       close();
     }
   }
- }
+ 
 
 
 function playGame() { // master function
