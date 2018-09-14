@@ -295,7 +295,7 @@ function doStageTwo(color) {
                 window.alert("You chose apples and rolled a " + dieRollResult + "! 🍊");
             }
             else if(userInput === "oranges"){
-                dieRollResult=rollDie(4);
+                dieRollResult=rollDie();
                 window.alert("You chose oragnes and rolled a " + dieRollResult + "! 🍎");
             }
         }
@@ -381,7 +381,7 @@ function close_window() {
 function playGame() { // master function
     window.alert("｡☆✼★Welcome to Your Fortune!★✼☆｡"); 
     window.alert("Ready to get your fortune? 😊 If so click ahead!")
-    window.alert("Instructions: Answer the questions, and it'll assign you a random number leading you to your fortune!!\nThe first number/color has been generated already for you!\nHappy fortune telling! 🌟 ")
+    window.alert("Instructions: Answer the questions, and it'll assign you a random number leading you to your fortune!!\nThe first number/color has already been generated for you!\nHappy fortune telling! 🌟 ")
     let stageOneColorResult = doStageOne();
     let stageTwoRollResult = doStageTwo(stageOneColorResult);
     let stageThreeInputResult = doStageThree(stageTwoRollResult);
